@@ -7,7 +7,7 @@
 #
 # Misc
 #
-timezone: Europe/Amsterdam
+timezone: Europe/Vilnius
 
 dns_nameservers: [9.9.9.9, 149.112.112.112]
 
@@ -35,7 +35,7 @@ dotfiles_repo: https://github.com/notthebee/dotfiles
 
 boot_drive_serial: ""
 
-enable_pikvm: true
+enable_pikvm: false
 
 pikvm_address: pikvm.box
 
@@ -48,18 +48,18 @@ colorscheme: nord
 #
 version: focal
 
-apt_mirror: http://ftp.uni-mainz.de/ubuntu/
+apt_mirror: http://mirror.litnet.lt/ubuntu/
 
 
 #
 # Email credentials (for SMART and Snapraid error reporting)
 #
 
-email: moe@notthebe.ee
+email: errp@intranet.nty
 
 email_login: "{{ email }}"
 
-email_smtp_host: smtp.mailbox.org
+email_smtp_host: smtp.email.nty
 
 email_smtp_port: 465
 
@@ -116,18 +116,17 @@ enable_booksonic: true
 
 enable_deluge: true
 
-enable_sonarr: true
+enable_sonarr: false
 
-enable_radarr: true
+enable_radarr: false
 
 enable_lidarr: false
 
 enable_readarr: false
 
-enable_openbooks: true
+enable_openbooks: false
 
-
-enable_jackett: true
+enable_jackett: false
 
 # Public-facing services
 
@@ -139,11 +138,40 @@ enable_youtransfer: false
 
 enable_swag: true
 
+# AB
+
+enable_xmppserver: true
+enable_emailserver: true
+enable_frp: true
+enable_browservice: true
+enable_plemora: true
+enable_pixelfed: true
+enable_protonmailbridge: true
+enable_e621: false
+enable_gitea: true
+enable_searx: true
+enable_s3minioserver: false
+enable_librespeedtest: false
+enable_iperfspeedtest: false
+enable_invidious: true
+enable_doh4intranet: false
+
+# AB Simple WWW
+enable_wwwt_nettools: true #bgp, traceroute, ping
+enable_wwwt_adminer: true #php db
+enable_wwwt_webtools: true #unicode, qr code gen+reader, keycode, cyberchef, tts etc
+enable_wwwt_isms: true
+enable_bn_recipes: true # https://github.com/LukeSmithxyz/based.cooking
+
+# AB Custom apps
+enable_dev_viddla: true
+enable_dev_appstore: true
+
 # DDNS
 
 enable_duckdns: false
 
-enable_cloudflare-ddns: true
+enable_cloudflare-ddns: false
 
 enable_ddclient: true
 
